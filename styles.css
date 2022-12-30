@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f3efef;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  background-color: inherit;
+}
+
+header {
+  background-color: dodgerblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 2rem;
+  min-height: 4rem;
+  color: white;
+}
+
+main {
+  width: 100%;
+  max-width: 1000px;
+  margin: 3rem auto;
+}
+.login-main {
+  display: grid;
+  grid-template:
+    "tl tr" 1fr
+    "b b" 1fr / 1fr 1fr;
+}
+
+.left-content {
+  grid-area: tl;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 0 10px #ccc;
+  display: flex;
+  flex-direction: column;
+}
+
+.left-content form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem 1.5rem;
+}
+
+.left-content input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border-radius: 3px;
+  border: solid 1px gray;
+  font-size: 16px;
+}
+
+.submit-btn {
+  width: 100%;
+  font-size: 16px;
+  padding: 0.8rem;
+  background-color: dodgerblue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 300ms;
+}
+
+.submit-btn:hover {
+  scale: 1.03;
+  box-shadow: 0 0 10px black;
+}
+
+form a {
+  color: gray;
+}
+
+.left-content button {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.user-btn {
+  border-block: solid 1px #ccc;
+}
+
+.buttons-div {
+  display: none;
+}
+
+.activeUsers {
+  display: flex;
+}
+
+.buttons-div button {
+  width: 100%;
+}
+
+.buttons-div button:first-of-type {
+  position: relative;
+}
+.buttons-div button:first-of-type::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  translate: 0 -50%;
+  height: 70%;
+  width: 1px;
+  background-color: #ccc;
+  border-radius: 5px;
+}
+
+.right-content {
+  padding: 2rem;
+}
+
+.right-content div {
+  position: relative;
+  padding-left: 3rem;
+}
+
+.right-content img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2rem;
+  height: 2rem;
+  object-fit: contain;
+}
+
+.right-content p {
+  margin-top: 1.5rem;
+  color: gray;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+  margin-block: 3rem;
+}
+
+.bottom-content {
+  grid-area: b;
+}
+
+.bottom-content > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts h4 {
+  margin-bottom: 1rem;
+}
+
+.additional-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+/* REGISTRATION */
+
+.reg-title {
+  text-align: center;
+  margin-top: 3rem;
+  color: gray;
+  font-weight: 400;
+}
+
+.reg-main form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 5rem;
+  row-gap: 1.5rem;
+}
+
+.input-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-div label {
+  margin-bottom: 0.5rem;
+}
+
+.input-div input {
+  padding: 0.5rem 1rem;
+  font-size: 16px;
+  border-radius: 3px;
+  border: solid 1px gray;
+}
+
+.validator {
+  color: gray;
+  font-size: 14px;
+}
+
+.verify-div {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.verify-div input {
+  width: 100%;
+}
+
+.verify-div button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+  background-color: orangered;
+  width: 35%;
+  padding-inline: 1rem;
+  color: white;
+  border-radius: 3px;
+}
+
+.checkbox-div label {
+  color: gray;
+  font-size: 14px;
+}
+
+.question-div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.reg-btn {
+  background-color: dodgerblue;
+  color: white;
+  font-size: 18px;
+  border-radius: 3px;
+  padding: 1rem;
+}
+
+.login-btn {
+  margin-bottom: 2rem;
+  font-size: 18px;
+}
